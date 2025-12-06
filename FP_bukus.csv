@@ -1,0 +1,203 @@
+kode_buku,nama_buku,penulis_buku,penerbit_buku,tahun_cetak_buku
+1COBA, NamaSama, PenulisSama, PenerbitSama, 2024
+0COBA, NamaSama, PenulisSama, PenerbitSama, 2021
+SEC752,Cloud Computing Reference,J.K. Rowling,Wiley,2010
+GM591,Kriptografi Terlengkap,Eko Kurniawan,Erlangga,2025
+SCI055,Explore Robotics,Stuart Russell,Wiley,2019
+SCI278,Machine Learning Modern,Andrew Hunt,McGraw-Hill,2016
+BUS445,The Art of Akuntansi Dasar Jilid 2,Ian Goodfellow,Wiley,2013
+BUS435,Keamanan Siber Guide,Dennis Ritchie,Salemba Empat,2010
+CS949,Konsep Kimia Organik Guide,Sutanto,Salemba Empat,2013
+CS376,Psikologi Kognitif 2024 Edition,J.K. Rowling,MIT Press,2018
+AI135,Analisis Internet of Things Reference,Stephen King,Pearson,2015
+DES544,Artificial Intelligence in Action,Andrew Hunt,Pearson,2010
+AI747,Explore Psikologi Kognitif dan Implementasinya,Eric Matthes,Bentang Pustaka,2012
+MTH781,Akuntansi Dasar Terlengkap,Robert C. Martin,Gramedia,2018
+GM080,Pemrograman Keamanan Siber,Guido Van Rossum,Pearson,2013
+DES767,Teknik Aljabar Linear,Linus Torvalds,No Starch Press,2016
+WEB770,Buku Saku Game Development,Mark Zuckerberg,Pearson,2021
+DB879,Explore Machine Learning,Bill Gates,No Starch Press,2018
+IOT174,Jawascript untuk Pemula,Budi Raharjo,McGraw-Hill,2012
+GM983,Analisis Keamanan Siber Handbook,Thomas H. Cormen,Salemba Empat,2022
+MTH726,Keamanan Siber Jilid 2,Al Sweigart,Addison-Wesley,2020
+WEB895,Praktikum Jaringan Komputer Jilid 2,James Gosling,Springer,2014
+CS021,Praktikum Data Science,Onno W. Purbo,Gramedia,2019
+B954,Penerapan Robotics,Bill Gates,Erlangga,2021
+B398,Ekonomi Makro Best Practice,Mark Zuckerberg,Andi Offset,2018
+SEC356,Pengantar Blockchain,Al Sweigart,Gramedia,2023
+MTH203,The Art of Game Development,Robert C. Martin,Wiley,2023
+LIT341,Principals of Sastra Inggris,Andrew Hunt,Republika,2020
+PD531,Sastra Inggris Terlengkap,William Stallings,Andi Offset,2016
+BUS335,Statistika Jilid 1,Romasi,Wiley,2012
+DES129,Mastering Cloud Computing Handbook,Augustus,O'Reilly,2022
+BUS204,Konsep Matematika Diskrit Reference,Eko Kurniawan,Gramedia,2019
+DB949,The Art of Game Development Handbook,Budi Raharjo,Bentang Pustaka,2023
+DES277,Fundamentals of Artificial Intelligence untuk Pemula,Linus Torvalds,Andi Offset,2015
+IOT947,Principals of Java,Widodo & J,Pearson,2020
+DB816,Konsep Game Development,Linus Torvalds,Republika,2014
+GM241,Biologi Modern Guide,Andrew Hunt,Springer,2016
+WEB911,Robotics Lanjut,Sutanto,Erlangga,2025
+IOT544,Dasar Data Science,J.K. Rowling,Addison-Wesley,2019
+IOT674,Strategi C++ in Action,J.K. Rowling,Andi Offset,2019
+WEB798,Java Terlengkap,Thomas H. Cormen,Republika,2010
+SEC128,Principals of Golang,Bill Gates,Gagas Media,2014
+DB413,Pemrograman Kriptografi Edisi Lengkap,Erlang,Pearson,2019
+GM744,Praktikum UI/UX Design,Erlang,Andi Offset,2024
+WEB469,Advanced Golang,Eric Matthes,MIT Press,2018
+WEB336,Strategi Sejarah Indonesia Reference,Dee Lestari,Andi Offset,2020
+LIT605,Pemrograman Java Handbook,Jogiyanto,Salemba Empat,2025
+GM102,Desain Grafis Guide,Dennis Ritchie,McGraw-Hill,2011
+LIT119,Aljabar Linear Terlengkap,Rinaldi Munir,Pearson,2022
+B247,Robotics Terlengkap,William Stallings,Springer,2015
+CS049,Penerapan Kimia Organik,Jogiyanto,Andi Offset,2016
+AI933,Node JS untuk Pemula,Dennis Ritchie,Gramedia,2025
+DES989,Teknik Jawascript,Bill Gates,Bentang Pustaka,2022
+GM815,Kalkulus Jilid 2,Linus Torvalds,Gramedia,2010
+AI531,Game Development Jilid 1,Widodo & J,Andi Offset,2018
+DB026,Penerapan Cloud Computing,Guido Van Rossum,Pearson,2015
+B561,Buku Saku Statistika Lanjut,Bill Gates,Andi Offset,2023
+SEC847,Explore Statistika Reference,Andrew Hunt,Salemba Empat,2010
+DES794,Principals of Jawascript Jilid 2,Dennis Ritchie,Republika,2020
+GM390,Strategi Matematika Diskrit 2024 Edition,Al Sweigart,Informatika,2017
+WEB925,Pemrograman Desain Grafis Terlengkap,Bill Gates,Wiley,2024
+LIT874,Strategi Golang Best Practice,Andrea Hirata,Informatika,2018
+SCI758,Penerapan Aljabar Linear 2024 Edition,Dee Lestari,Elex Media,2020
+MTH271,Sastra Inggris Handbook,Linus Torvalds,McGraw-Hill,2020
+SEC958,Kriptografi Best Practice,Dee Lestari,Pearson,2014
+B522,UI/UX Design Handbook,Andrea Hirata,Informatika,2012
+LIT324,Analisis Desain Grafis,Stuart Russell,Gramedia,2022
+GM754,Dasar Matematika diskrit Guide,Ian Goodfellow,O'Reilly,2015
+MTH564,Advanced Matematika Diskrit Lanjut,Stuart Russell,Erlangga,2014
+SOC842,Fundamentals of Node JS Reference,Jogiyanto,Springer,2020
+CS204,Konsep Statistika Best Practice,Rinaldi Munir,Gagas Media,2012
+AI868,The Art of Filsafat Ilmu 2024 Edition,Stephen King,Erlangga,2015
+LIT902,Pemrograman Kimia Organik,Al Sweigart,Bentang Pustaka,2024
+GM940,Pengantar Aljabar Linear in Action,Andrew Hunt,MIT Press,2014
+MTH503,Penerapan Kalkulus,Widodo & J,Gagas Media,2015
+MTH435,Tutorial Sistem Operasi untuk Pemula,Mark Zuckerberg,Pearson,2010
+GM056,Matematika diskrit Praktis,Erlang,Pearson,2014
+LIT129,Fundamentals of Game Development Jilid 1,Eric Matthes,McGraw-Hill,2018
+AI650,React JS dan Implementasinya,Tere Liye,O'Reilly,2014
+WEB719,Fisika Dasar dan Implementasinya,Ian Goodfellow,Informatika,2022
+DES254,Sejarah Indonesia untuk Pemula,Widodo & J,Republika,2025
+B363,Keamanan Siber Terlengkap,Stuart Russell,Republika,2016
+WEB335,Strategi Jaringan Komputer Modern,Bill Gates,Informatika,2023
+BUS736,Dasar Matematika Diskrit in Action,Jogiyanto,MIT Press,2017
+SEC995,Pengantar Sastra Inggris,Budi Raharjo,Wiley,2023
+BUS412,Dasar Kimia Organik Best Practice,Dennis Ritchie,Andi Offset,2019
+GM126,Explore Robotics Jilid 2,Sutanto,Gramedia,2019
+GM851,Statistika in Action,Sutanto,Republika,2013
+AI910,Algoritma Java,James Gosling,Wiley,2024
+SEC878,Algoritma Golang,Stuart Russell,Bentang Pustaka,2018
+WEB150,Dasar Keamanan Siber,Andrew Hunt,No Starch Press,2020
+LIT114,Node JS in Action,Budi Raharjo,MIT Press,2010
+DB529,Pemrograman Game Development,J.K. Rowling,Springer,2017
+CS726,Pemrograman C++,Romasi,Gramedia,2020
+SCI088,Aljabar Linear Praktis,Eric Matthes,Elex Media,2013
+PD501,Teknik Kriptografi,Guido Van Rossum,O'Reilly,2021
+SEC957,Algoritma UI/UX Design,Al Sweigart,McGraw-Hill,2018
+DB184,Strategi Sastra Inggris Edisi Lengkap,Stuart Russell,Springer,2022
+SOC910,Algoritma Aljabar Linear,Andrew Hunt,Wiley,2018
+WEB185,Python dan Implementasinya,Ian Goodfellow,Pearson,2018
+PD729,The Art of Jawascript Lanjut,William Stallings,Springer,2014
+SEC823,Advanced Akuntansi Dasar Edisi Lengkap,Abdul Kadir,Gramedia,2018
+GM974,Analisis Manajemen Bisnis 2024 Edition,Eko Kurniawan,Informatika,2016
+B193,Internet of Things in Action,Andrew Hunt,O'Reilly,2022
+SEC742,Pengantar Kimia Organik,Dennis Ritchie,Andi Offset,2024
+DES364,Praktikum C++,Stephen King,MIT Press,2010
+SCI266,Explore C++,Sutanto,Addison-Wesley,2011
+AI865,Penerapan Cloud Computing 2024 Edition,Al Sweigart,Salemba Empat,2020
+CS768,Advanced Node JS,Widodo & J,Springer,2012
+PD389,Fundamentals of Sistem Operasi Handbook,Bill Gates,MIT Press,2017
+CS863,The Art of Fisika Dasar Terlengkap,Abdul Kadir,Salemba Empat,2016
+AI851,Psikologi Kognitif untuk Pemula,Tere Liye,Informatika,2012
+SEC611,Fundamentals of Kimia Organik untuk Pemula,Fathansyah,McGraw-Hill,2010
+WEB200,Mastering Kimia Organik Lanjut,Dennis Ritchie,McGraw-Hill,2015
+CS513,Game Development Reference,Linus Torvalds,McGraw-Hill,2010
+DES395,The Art of Sejarah Indonesia,Budi Raharjo,MIT Press,2015
+LIT493,Dasar Kimia Organik untuk Pemula,Widodo & J,O'Reilly,2019
+PD928,Dasar Node JS Terlengkap,Budi Raharjo,Pearson,2018
+SEC242,Strategi Basis Data,Stephen King,Gramedia,2022
+AI289,Principals of Sastra Inggris Jilid 1,Mark Zuckerberg,Elex Media,2018
+SOC329,Principals of Akuntansi Dasar,Tere Liye,Gagas Media,2025
+IOT471,Tutorial Ekonomi Makro Modern,Andrea Hirata,MIT Press,2025
+DES567,Matematika diskrit dan Implementasinya,Al Sweigart,O'Reilly,2019
+B573,Tutorial Desain Grafis,J.K. Rowling,O'Reilly,2012
+GM367,Advanced Kalkulus,Mark Zuckerberg,MIT Press,2021
+WEB761,The Art of Kimia Organik,Erlang,No Starch Press,2025
+SEC503,C++ Praktis,Mark Zuckerberg,Informatika,2010
+BUS835,Analisis C++ Reference,Tere Liye,Republika,2012
+PD693,Golang Edisi Lengkap,Abdul Kadir,Andi Offset,2018
+IOT166,Mastering Robotics Jilid 2,Linus Torvalds,Bentang Pustaka,2017
+LIT710,Tutorial Jawascript Modern,Guido Van Rossum,Salemba Empat,2012
+BUS657,Algoritma Golang Edisi Lengkap,Al Sweigart,MIT Press,2022
+B420,Matematika Diskrit Praktis,Erlang,Andi Offset,2011
+AI786,Explore Desain Grafis Guide,Fathansyah,Springer,2019
+MTH448,Algoritma Matematika Diskrit Terlengkap,Stephen King,Pearson,2011
+LIT134,Explore Sistem Operasi,William Stallings,Pearson,2025
+WEB025,Principals of Sastra Inggris Reference,Robert C. Martin,Pearson,2021
+SOC272,Advanced C++,Romasi,Addison-Wesley,2015
+MTH135,Analisis Sastra Inggris Modern,Rinaldi Munir,Erlangga,2019
+LIT597,Tutorial Basis Data,Rinaldi Munir,Informatika,2012
+GM995,Penerapan React JS Jilid 2,Andrew Hunt,Informatika,2019
+PD290,Fisika Dasar Guide,Widodo & J,O'Reilly,2024
+SCI931,Data Science 2024 Edition,Eko Kurniawan,Elex Media,2016
+B058,Fundamentals of Robotics Reference,Thomas H. Cormen,Wiley,2017
+PD702,Fundamentals of Kriptografi Handbook,Romasi,Pearson,2014
+BUS379,Strategi Psikologi Kognitif,Al Sweigart,Gagas Media,2025
+DB263,Strategi Robotics,Sutanto,Informatika,2016
+SCI030,Matematika Diskrit 2024 Edition,Stephen King,Wiley,2019
+DES620,Dasar Jaringan Komputer Edisi Lengkap,William Stallings,O'Reilly,2022
+SCI737,Pengantar Desain Grafis Jilid 1,Eko Kurniawan,Wiley,2013
+SOC646,Konsep UI/UX Design Jilid 1,Widodo & J,Erlangga,2022
+PD988,Sistem Operasi Jilid 1,Linus Torvalds,Republika,2022
+SEC307,Praktikum Sistem Operasi,Robert C. Martin,Gramedia,2023
+LIT378,Algoritma Kalkulus Handbook,Mark Zuckerberg,Informatika,2012
+MTH526,Praktikum Fisika Dasar Lanjut,Mark Zuckerberg,Salemba Empat,2021
+AI152,Strategi Aljabar Linear Praktis,Guido Van Rossum,No Starch Press,2010
+PD044,Mastering Sejarah Indonesia Guide,Eric Matthes,Springer,2020
+CS033,Dasar Kriptografi,Budi Raharjo,Republika,2023
+SOC297,Ekonomi Makro 2024 Edition,Al Sweigart,Salemba Empat,2024
+SOC840,Principals of Aljabar Linear,J.K. Rowling,Republika,2014
+LIT844,Fundamentals of Sastra Inggris in Action,Mark Zuckerberg,Republika,2011
+AI952,Fundamentals of Python,Dennis Ritchie,Erlangga,2019
+AI886,Matematika diskrit Handbook,Onno W. Purbo,McGraw-Hill,2023
+CS076,Pengantar Kalkulus,Stuart Russell,MIT Press,2011
+AI942,Praktikum Matematika diskrit,Robert C. Martin,Pearson,2012
+BUS174,Mastering Ekonomi Makro Edisi Lengkap,Guido Van Rossum,Erlangga,2024
+AI877,Penerapan Python Guide,Iwan Sofana,Elex Media,2017
+MTH108,Manajemen Bisnis 2024 Edition,Rinaldi Munir,Republika,2016
+GM588,Buku Saku React JS Best Practice,Al Sweigart,Springer,2013
+SEC423,Advanced Internet of Things Reference,Onno W. Purbo,Elex Media,2012
+B609,Matematika diskrit Guide,William Stallings,Addison-Wesley,2016
+DES816,Buku Saku Psikologi Kognitif Jilid 2,Eric Matthes,Gagas Media,2015
+DB238,Buku Saku Matematika diskrit,Dennis Ritchie,Springer,2024
+LIT357,Basis Data dan Implementasinya,Thomas H. Cormen,No Starch Press,2021
+AI536,Internet of Things Modern,Fathansyah,No Starch Press,2022
+LIT123,Statistika dan Implementasinya,Jogiyanto,Salemba Empat,2018
+WEB145,Kalkulus Lanjut,Bill Gates,Salemba Empat,2016
+B105,Algoritma Kimia Organik Jilid 1,Abdul Kadir,Bentang Pustaka,2024
+DES336,Strategi Ekonomi Makro in Action,Bill Gates,Addison-Wesley,2010
+DB494,Sastra Inggris Modern,Dennis Ritchie,Pearson,2019
+DES883,Strategi Kimia Organik,Abdul Kadir,Andi Offset,2019
+LIT962,Analisis Jawascript,Mark Zuckerberg,McGraw-Hill,2011
+AI517,Filsafat Ilmu 2024 Edition,Dee Lestari,No Starch Press,2014
+SEC757,The Art of Akuntansi Dasar,Onno W. Purbo,Gramedia,2023
+DB422,Filsafat Ilmu Reference,Mark Zuckerberg,Bentang Pustaka,2012
+DB807,Mastering Sastra Inggris,Budi Raharjo,MIT Press,2012
+BUS960,Penerapan Desain Grafis,Andrea Hirata,Pearson,2016
+AI045,Dasar Filsafat Ilmu,Onno W. Purbo,O'Reilly,2013
+DB199,Advanced Desain Grafis,Stuart Russell,Addison-Wesley,2010
+SCI041,Golang Terlengkap,Abdul Kadir,Wiley,2012
+BUS683,Akuntansi Dasar dan Implementasinya,James Gosling,Gramedia,2017
+CS264,Explore Sistem Operasi dan Implementasinya,Ian Goodfellow,O'Reilly,2024
+B427,Teknik Node JS Guide,Stuart Russell,No Starch Press,2016
+IOT613,Jaringan Komputer Edisi Lengkap,William Stallings,McGraw-Hill,2011
+MTH540,Buku Saku Blockchain Lanjut,Thomas H. Cormen,Springer,2012
+WEB973,Algoritma Sistem Operasi,Widodo & J,Bentang Pustaka,2018
+B854,Biologi Modern Handbook,Sutanto,Wiley,2017
+LIT036,Ekonomi Makro Handbook,Iwan Sofana,Springer,2012
+DES414,Robotics Jilid 2,Onno W. Purbo,Bentang Pustaka,2024
+SCI214,Tutorial Sistem Operasi Modern,Erlang,Elex Media,2013
+AI830,Pemrograman Sejarah Indonesia,Tere Liye,No Starch Press,2014
+PD952,Pengantar Python Guide,Onno W. Purbo,Wiley,2022
