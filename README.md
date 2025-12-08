@@ -29,3 +29,4 @@ Proyek ini dibuat untuk mengatasi masalah tersebut dengan menerapkan algoritma *
 
 ### Link Stramlit:
 https://fpmatdis2-perpustakaan.streamlit.app/
+https://its.id/m/Perpustakaan
