@@ -40,6 +40,5 @@ https://its.id/m/Perpustakaan
 
  **Merge**
  
-<img width="778" height="861" alt="Merge drawio" src="https://github.com/user-attachments/assets/4e7428c8-2108-4ed6-b687-ec21dd556362" />
+ <img width="779" height="862" alt="Mergesortflow drawio" src="https://github.com/user-attachments/assets/6512614a-ef49-43dc-b84b-6eed762f25cf" />
 
- 
