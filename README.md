@@ -38,3 +38,8 @@ https://its.id/m/Perpustakaan
 
 <img width="608" height="916" alt="FinalGrandFlow drawio" src="https://github.com/user-attachments/assets/73bfb046-31c2-4d58-a2f5-1fd955be2424" />
 
+ **Merge**
+ 
+<img width="778" height="861" alt="Merge drawio" src="https://github.com/user-attachments/assets/4e7428c8-2108-4ed6-b687-ec21dd556362" />
+
+ 
