@@ -134,7 +134,7 @@ def main():
     st.markdown("Implementasi: **Merge Sort** & **Fuzzy Search (Levenshtein)**")
     
     # Load Data
-    nama_file = 'FP_bukus.csv'
+    nama_file = 'FP_buku.csv'
     if not os.path.exists(nama_file):
         st.error(f"File database '{nama_file}' tidak ditemukan! Harap upload file CSV.")
         return
@@ -227,4 +227,5 @@ def main():
 if __name__ == "__main__":
 
     main()
+
 
