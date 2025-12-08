@@ -1,6 +1,6 @@
 kode_buku,nama_buku,penulis_buku,penerbit_buku,tahun_cetak_buku
-1COBA,NamaSama,PenulisSama,PenerbitSama,2024
-0COBA,NamaSama,PenulisSama,PenerbitSama,2021
+1COBA,Nama Sama,Penulis Sama,Penerbit Sama,2024
+0COBA,Nama Sama,Penulis Sama,Penerbit Sama,2021
 SEC752,Cloud Computing Reference,J.K. Rowling,Wiley,2010
 GM591,Kriptografi Terlengkap,Eko Kurniawan,Erlangga,2025
 SCI055,Explore Robotics,Stuart Russell,Wiley,2019
@@ -201,4 +201,5 @@ DES414,Robotics Jilid 2,Onno W. Purbo,Bentang Pustaka,2024
 SCI214,Tutorial Sistem Operasi Modern,Erlang,Elex Media,2013
 AI830,Pemrograman Sejarah Indonesia,Tere Liye,No Starch Press,2014
 PD952,Pengantar Python Guide,Onno W. Purbo,Wiley,2022
+
 
