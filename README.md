@@ -2,7 +2,8 @@
 
 **Implementasi Fuzzy Search (Levenshtein Recursion) dan Merge Sort pada Sistem Perpustakaan.**
 
-##  Latar Belakang
+##
+###  Latar Belakang
 
 Mencari buku pada perpustakaan yang memiliki ribuan koleksi data dapat memakan waktu yang sangat lama jika dilakukan secara manual. Tantangan utamanya adalah:
 
