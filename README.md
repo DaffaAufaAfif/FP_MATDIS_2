@@ -25,3 +25,6 @@ Proyek ini dibuat untuk mengatasi masalah tersebut dengan menerapkan algoritma *
 * **merge_sort(data, key_sort):** Fungsi ini mengimplementasikan algoritma pengurutan *Divide and Conquer* dengan kompleksitas waktu $O(n \log n)$. Data dipecah menjadi sub-list terkecil secara rekursif, kemudian digabungkan kembali (*merge*) sambil dibandingkan nilainya berdasarkan `key_sort`. return: List data buku yang sudah terurut.
 * **levenshtein_recursive(s1, s2):** Fungsi inti untuk *Fuzzy Search*. Menghitung jarak edit minimum (jumlah operasi hapus, sisip, ganti) yang diperlukan untuk mengubah string `s1` (input user) menjadi `s2` (data buku). Menggunakan pendekatan rekursif dengan *memoization*. return: Nilai integer (jarak edit/skor error).
 * **cari_buku_fuzzy(keyword, data_buku):** Fungsi *wrapper* yang memproses input user. Fungsi ini memecah `keyword` menjadi per kata, memanggil `levenshtein_recursive` terhadap setiap data buku, dan memfilter hasil berdasarkan batas toleransi. return: List buku yang memiliki skor error di bawah batas toleransi.
+
+### Link Stramlit:
+https://github.com/DaffaAufaAfif/FP_MATDIS_2
