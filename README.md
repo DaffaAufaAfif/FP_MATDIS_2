@@ -28,4 +28,4 @@ Proyek ini dibuat untuk mengatasi masalah tersebut dengan menerapkan algoritma *
 * **cari_buku_fuzzy(keyword, data_buku):** Fungsi *wrapper* yang memproses input user. Fungsi ini memecah `keyword` menjadi per kata, memanggil `levenshtein_recursive` terhadap setiap data buku, dan memfilter hasil berdasarkan batas toleransi. return: List buku yang memiliki skor error di bawah batas toleransi.
 
 ### Link Stramlit:
-https://github.com/DaffaAufaAfif/FP_MATDIS_2
+https://fpmatdis2-perpustakaan.streamlit.app/
