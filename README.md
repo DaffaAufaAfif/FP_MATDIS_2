@@ -31,3 +31,9 @@ Proyek ini dibuat untuk mengatasi masalah tersebut dengan menerapkan algoritma *
 https://fpmatdis2-perpustakaan.streamlit.app/
 
 https://its.id/m/Perpustakaan
+
+### FLOWCHART
+
+ **Main Flow**
+
+<img width="578" height="781" alt="GrandFlow drawio" src="https://github.com/user-attachments/assets/b2994564-cffb-4817-acc1-c0983ca625a1" />
