@@ -36,4 +36,5 @@ https://its.id/m/Perpustakaan
 
  **Main Flow**
 
-<img width="578" height="781" alt="GrandFlow drawio" src="https://github.com/user-attachments/assets/b2994564-cffb-4817-acc1-c0983ca625a1" />
+<img width="608" height="916" alt="FinalGrandFlow drawio" src="https://github.com/user-attachments/assets/73bfb046-31c2-4d58-a2f5-1fd955be2424" />
+
