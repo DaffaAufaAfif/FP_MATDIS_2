@@ -3,27 +3,21 @@ import csv
 import os
 import sys
 
-# Mengatur limit rekursi agar tidak error saat string sangat panjang
 sys.setrecursionlimit(2000)
 
-# --- 1. FUNGSI LOAD DATA DARI CSV ---
-@st.cache_data # Caching agar tidak baca file berulang-ulang setiap klik
-def baca_data_buku(filename):
+@st.cache_data # Caching 
+def baca_data_buku(filename, timestamp):
     data_buku = []
     try:
         with open(filename, mode='r', encoding='utf-8') as file:
             csv_reader = csv.DictReader(file)
             for row in csv_reader:
-                # Pastikan key 'penerbit_buku' ada jika di CSV tidak ada, beri default
-                if 'penerbit_buku' not in row:
-                    row['penerbit_buku'] = "-" 
                 data_buku.append(row)
         return data_buku
     except FileNotFoundError:
         st.error(f"Error: File {filename} tidak ditemukan.")
         return []
 
-# --- 2. ALGORITMA MERGE SORT (REKURSIF) ---
 def merge_sort(data, key_sort='kode_buku'):
     if len(data) <= 1:
         return data
@@ -42,7 +36,7 @@ def merge(kiri, kanan, key_sort):
     i = j = 0
 
     while i < len(kiri) and j < len(kanan):
-        # Mengambil value berdasarkan key yang dipilih user
+        # sort berdasarkan key
         val_kiri = kiri[i].get(key_sort, "").lower()
         val_kanan = kanan[j].get(key_sort, "").lower()
 
@@ -58,8 +52,6 @@ def merge(kiri, kanan, key_sort):
     
     return hasil
 
-# --- 3. ALGORITMA FUZZY SEARCH (LEVENSHTEIN REKURSIF) ---
-# Menggunakan lru_cache bawaan python atau memo manual tetap oke
 def levenshtein_recursive(s1, s2, memo=None):
     if memo is None:
         memo = {}
@@ -75,14 +67,13 @@ def levenshtein_recursive(s1, s2, memo=None):
     else:
         res = 1 + min(
             levenshtein_recursive(s1[1:], s2, memo),    # Hapus
-            levenshtein_recursive(s1, s2[1:], memo),    # Sisip
+            levenshtein_recursive(s1, s2[1:], memo),    # Sisipkan
             levenshtein_recursive(s1[1:], s2[1:], memo) # Ganti
         )
     
     memo[(s1, s2)] = res
     return res
 
-# --- 4. LOGIKA PENCARIAN (MODIFIKASI KOLOM DINAMIS) ---
 def cari_buku_fuzzy(keyword, data_buku, target_column='nama_buku'):
     hasil_pencarian = []
     
@@ -93,7 +84,6 @@ def cari_buku_fuzzy(keyword, data_buku, target_column='nama_buku'):
         return []
 
     for buku in data_buku:
-        # MODIFIKASI: Mengambil data sesuai kolom yang dipilih user (Judul/Kode/Penulis)
         text_target = buku.get(target_column, "").lower()
         kata_target = text_target.split()
         
@@ -109,9 +99,8 @@ def cari_buku_fuzzy(keyword, data_buku, target_column='nama_buku'):
             
             total_score_buku += score_terkecil_untuk_kata_ini
             
-        # Toleransi
         panjang_karakter_user = len(keyword_clean.replace(" ", ""))
-        batas_toleransi = panjang_karakter_user * 0.7 
+        batas_toleransi = panjang_karakter_user * 0.7 #Toleransi
         
         if total_score_buku <= batas_toleransi:
             hasil_pencarian.append({
@@ -119,11 +108,11 @@ def cari_buku_fuzzy(keyword, data_buku, target_column='nama_buku'):
                 'Judul': buku['nama_buku'],
                 'Penulis': buku['penulis_buku'],
                 'Penerbit': buku.get('penerbit_buku', '-'),
-                'Offset': total_score_buku # Untuk keperluan debugging/sorting
+                'Offset': total_score_buku #offset
             })
     
-    # Urutkan berdasarkan score terendah
-    hasil_pencarian.sort(key=lambda x: x['Offset'])
+    # Urutkan berdasarkan score lalu kode
+    hasil_pencarian.sort(key=lambda x: (x['Offset'], x['Kode']))
     return hasil_pencarian
 
 # --- 5. INTERFACE STREAMLIT ---
@@ -133,49 +122,35 @@ def main():
     st.title("📚 Sistem Pencarian Buku Perpustakaan")
     st.markdown("Implementasi: **Merge Sort** & **Fuzzy Search (Levenshtein)**")
     
-    # Load Data
+    
     nama_file = 'FP_buku.csv'
     if not os.path.exists(nama_file):
         st.error(f"File database '{nama_file}' tidak ditemukan! Harap upload file CSV.")
         return
-
-    data_raw = baca_data_buku(nama_file)
+    timestamp = os.path.getmtime(nama_file) #load file's time of update
+    data_raw = baca_data_buku(nama_file)# Load Data
     
-    # --- SIDEBAR CONFIGURATION ---
     st.sidebar.header("Navigasi & Filter")
-    
-    # Pilihan Mode: Tabel Utama atau Pencarian
     mode_aplikasi = st.sidebar.radio("Pilih Mode:", ["Lihat Daftar Buku", "Pencarian Spesifik"])
 
-    # --- MODE 1: LIHAT DAFTAR BUKU (SORTING) ---
-    if mode_aplikasi == "Lihat Daftar Buku":
+    if mode_aplikasi == "Lihat Daftar Buku":      
         st.subheader("📂 Daftar Koleksi Buku")
-        
-        # Opsi Sorting
         sort_options = {
             "Kode Buku": "kode_buku",
             "Judul Buku": "nama_buku",
             "Penulis": "penulis_buku",
             "Penerbit": "penerbit_buku"
-        }
-        
-        # Default sort by Kode Buku (index 0)
+        }        
         pilihan_sort = st.sidebar.selectbox(
             "Urutkan berdasarkan:", 
             list(sort_options.keys()), 
             index=0
-        )
-        
+        )      
         key_sorting = sort_options[pilihan_sort]
-        
-        # Proses Sorting (Merge Sort)
         with st.spinner(f"Mengurutkan data berdasarkan {pilihan_sort}..."):
             data_sorted = merge_sort(data_raw, key_sort=key_sorting)
-        
         st.success(f"Menampilkan {len(data_sorted)} buku diurutkan berdasarkan **{pilihan_sort}**.")
-        
-        # Tampilkan Tabel
-        st.dataframe(
+        st.dataframe( #tabel
             data_sorted, 
             use_container_width=True,
             column_config={
@@ -185,19 +160,14 @@ def main():
                 "penerbit_buku": "Penerbit"
             }
         )
-
-    # --- MODE 2: PENCARIAN (FUZZY SEARCH) ---
     elif mode_aplikasi == "Pencarian Spesifik":
         st.subheader("🔍 Pencarian Fuzzy Search")
-        
-        # Input User
-        col1, col2 = st.columns([3, 1])
+        col1, col2 = st.columns([3, 1]) #user Input
         
         with col1:
             keyword = st.text_input("Masukkan kata kunci pencarian:", placeholder="Contoh: sytem programing")
             
         with col2:
-            # Pilihan Kolom Pencarian
             search_field_map = {
                 "Judul Buku": "nama_buku",
                 "Kode Buku": "kode_buku",
@@ -206,27 +176,24 @@ def main():
             }
             search_category = st.selectbox("Cari di kolom:", list(search_field_map.keys()))
             target_col = search_field_map[search_category]
-
         tombol_cari = st.button("Cari Buku")
-        
         if tombol_cari:
             if not keyword:
                 st.warning("Silakan masukkan kata kunci terlebih dahulu.")
             else:
                 with st.spinner("Sedang mencari..."):
-                    # Eksekusi Fuzzy Search
                     hasil = cari_buku_fuzzy(keyword, data_raw, target_column=target_col)
-                
                 if hasil:
                     st.success(f"Ditemukan {len(hasil)} hasil yang mirip.")
                     st.dataframe(hasil, use_container_width=True)
                 else:
                     st.error("Tidak ditemukan buku yang cocok dengan kata kunci tersebut.")
-                    st.markdown("*Tips: Coba kurangi kata kunci atau periksa kembali ejaan (sistem toleransi typo aktif).*")
+                    st.markdown("*Tips: Coba kurangi kata kunci atau periksa kembali ejaan.*")
+
 
 if __name__ == "__main__":
-
     main()
+
 
 
 
