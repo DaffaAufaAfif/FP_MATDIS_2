@@ -128,7 +128,7 @@ def main():
         st.error(f"File database '{nama_file}' tidak ditemukan! Harap upload file CSV.")
         return
     timestamp = os.path.getmtime(nama_file) #load file's time of update
-    data_raw = baca_data_buku(nama_file)# Load Data
+    data_raw = baca_data_buku(nama_file, timestamp)# Load Data
     
     st.sidebar.header("Navigasi & Filter")
     mode_aplikasi = st.sidebar.radio("Pilih Mode:", ["Lihat Daftar Buku", "Pencarian Spesifik"])
@@ -193,6 +193,7 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
 
 
