@@ -65,11 +65,11 @@ def levenshtein_distance(s1, s2):
             if s1[j-1] == s2[i-1]:
                 table[i][j] = table[i-1][j-1]
             else:
-                table[i][j] = min(
+                table[i][j] = (min(
                     table[i-1][j], #Hapus
                     table[i][j-1], #Sisip
                     table[i-1][j-1]) #ganti
-                +1
+                +1)
     return table[l_s2][l_s1]
 
 def cari_buku_fuzzy(keyword, data_buku, target_column='nama_buku'):
@@ -191,6 +191,7 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
 
 
