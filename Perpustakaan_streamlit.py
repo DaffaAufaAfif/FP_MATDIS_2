@@ -52,26 +52,15 @@ def merge(kiri, kanan, key_sort):
     
     return hasil
 
-def levenshtein_recursive(s1, s2, memo=None):
-    if memo is None:
-        memo = {}
-        
-    if (s1, s2) in memo:
-        return memo[(s1, s2)]
-
-    if len(s1) == 0: return len(s2)
-    if len(s2) == 0: return len(s1)
-
-    if s1[0] == s2[0]:
-        res = levenshtein_recursive(s1[1:], s2[1:], memo)
-    else:
-        res = 1 + min(
-            levenshtein_recursive(s1[1:], s2, memo),    # Hapus
-            levenshtein_recursive(s1, s2[1:], memo),    # Sisipkan
-            levenshtein_recursive(s1[1:], s2[1:], memo) # Ganti
-        )
-    
-    memo[(s1, s2)] = res
+def levenshtein_distance(s1, s2):
+    l_s1 = len(s1)
+    l_s2 = len(s2)
+    table = [[0 for _ in range(l_s1+1] for _ in range(l_s2+1)] #zeros table
+    for i in range(1, (l_s1+1)):
+        table[0][i] = i
+    for i in range(1, (l_s2+1)):
+        table[i][0] = i
+    for i in range() # not done yet
     return res
 
 def cari_buku_fuzzy(keyword, data_buku, target_column='nama_buku'):
@@ -93,7 +82,7 @@ def cari_buku_fuzzy(keyword, data_buku, target_column='nama_buku'):
             score_terkecil_untuk_kata_ini = float('inf')
             
             for k_target in kata_target:
-                dist = levenshtein_recursive(k_user, k_target)
+                dist = levenshtein_distance(k_user, k_target)
                 if dist < score_terkecil_untuk_kata_ini:
                     score_terkecil_untuk_kata_ini = dist
             
@@ -193,6 +182,7 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
 
 
