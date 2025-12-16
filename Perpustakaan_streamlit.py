@@ -55,13 +55,22 @@ def merge(kiri, kanan, key_sort):
 def levenshtein_distance(s1, s2):
     l_s1 = len(s1)
     l_s2 = len(s2)
-    table = [[0 for _ in range(l_s1+1] for _ in range(l_s2+1)] #zeros table
+    table = [[0 for _ in range(l_s1+1)] for _ in range(l_s2+1)] #zeros table
     for i in range(1, (l_s1+1)):
         table[0][i] = i
     for i in range(1, (l_s2+1)):
         table[i][0] = i
-    for i in range() # not done yet
-    return res
+    for i in range(1,l_s2+1):
+        for j in range(1,l_s1+1):
+            if s1[j-1] == s2[i-1]:
+                table[i][j] = table[i-1][j-1]
+            else:
+                table[i][j] = min(
+                    table[i-1][j], #Hapus
+                    table[i][j-1], #Sisip
+                    table[i-1][j-1]) #ganti
+                +1
+    return table[l_s2][l_s1]
 
 def cari_buku_fuzzy(keyword, data_buku, target_column='nama_buku'):
     hasil_pencarian = []
@@ -182,6 +191,7 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
 
 
