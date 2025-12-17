@@ -8,15 +8,12 @@ sys.setrecursionlimit(2000)
 @st.cache_data # Caching 
 def baca_data_buku(filename, timestamp):
     data_buku = []
-    try:
-        with open(filename, mode='r', encoding='utf-8') as file:
-            csv_reader = csv.DictReader(file)
-            for row in csv_reader:
-                data_buku.append(row)
-        return data_buku
-    except FileNotFoundError:
-        st.error(f"Error: File {filename} tidak ditemukan.")
-        return []
+    with open(filename, mode='r', encoding='utf-8') as file:
+        csv_reader = csv.DictReader(file)
+        for row in csv_reader:
+        data_buku.append(row)
+    return data_buku
+
 
 def merge_sort(data, key_sort='kode_buku'):
     if len(data) <= 1:
