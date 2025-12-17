@@ -11,7 +11,7 @@ def baca_data_buku(filename, timestamp):
     with open(filename, mode='r', encoding='utf-8') as file:
         csv_reader = csv.DictReader(file)
         for row in csv_reader:
-        data_buku.append(row)
+            data_buku.append(row)
     return data_buku
 
 
@@ -188,6 +188,7 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
 
 
